@@ -14,7 +14,7 @@
         <Button Text="Calcular" Command="{Binding CalcularCommand}" Margin="10"></Button>
         <Entry Text="{Binding R1}" Placeholder="El presupuesto es: " Margin="10"/>
 
-        <Button Text="Precio por metro M2 " Command="{Binding CalcularCommand}" Margin="20"></Button>
+        <Label Text="Precio por metro M2 "></Label>
         <Entry Text="{Binding R2}" Placeholder="El presupuesto es: " Margin="20"/>
     </StackLayout>
 
