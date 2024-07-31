@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewsModels="clr-namespace:Brocha2429841.ViewsModels"
+             x:Class="Brocha2429841.MainPage">
+    <ContentPage.BindingContext>
+        <ViewsModels:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Entry Text="{Binding Altura}" Placeholder="Ingrese la altura" Keyboard="Numeric" Margin="10"></Entry>
+        <Entry Text="{Binding Largo}" Placeholder="Ingrese el largo" Keyboard="Numeric" Margin="10"></Entry>
+
+        <Button Text="Calcular" Command="{Binding CalcularCommand}" Margin="10"></Button>
+        <Entry Text="{Binding R1}" Placeholder="El presupuesto es: " Margin="10"/>
+
+        <Button Text="Precio por metro M2 " Command="{Binding CalcularCommand}" Margin="20"></Button>
+        <Entry Text="{Binding R2}" Placeholder="El presupuesto es: " Margin="20"/>
+    </StackLayout>
+
+</ContentPage>
